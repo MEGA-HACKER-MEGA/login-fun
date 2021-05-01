@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.postimg.cc/CMrxn7pg/Screenshot-2021-01-14-at-3-34-08-PM.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+    text-align: center;
+}
+.container{
+    background: linear-gradient(#F5F5F5, #B3B3B3);
+    border-radius: 10px;
+    border: 30pt solid #666666; 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 350px;
+    text-align: center;
+} 
+h2{
+    color: #000000;
+    font-family: 'Major Mono Display', monospace;
+}
+p{
+    color: #000000;
+    margin-left: 8%;
+    width: 300px;
+    font-family: 'Cutive Mono', monospace;
+}
+button{
+    background-color: #7D7D7D;
+    color: white;
+    border: 1pt solid white;
+    border-radius: 5px;
+    font-size: 30px;
+}
+#txt{
+    background-color: #7D7D7D;
+    color: white;
+}
+button{
+    font-family: 'Monofett', cursive;
+}
+    </style>
+    <script>
+        var password="password";
+var pass;
+function next_page(){
+    var pass=document.getElementById("txt").value;
+    if(pass==password)
+    window.location="file:///C:/Users/yashs/Documents/Coding/Visual%20studio%20code/Login%20web/when.html";
+    else{
+        alert("Wrong password, try again");
+    }
+}
+    </script>
+    <div class="container">
+       <h2> Enter Password</h2>
+       <p>Enter the correct password to view the password protected page</p>
+       <img src="https://i.postimg.cc/CMrxn7pg/Screenshot-2021-01-14-at-3-34-08-PM.png" height="20" width="20">
+       <input type="password" id="txt" placeholder="Enter Password">
+       <br> <br>
+       <button id="btn" onclick="next_page()">DONE</button>
+       <br> <br>    
+    </div>
+</body>
+</html>
